@@ -7,5 +7,7 @@ pervalidos = (votosvalidos/eleitores)*100
 pernulos = (votosnulos/eleitores)*100
 perbrancos = (votosbrancos/eleitores)*100
 
-
-print("Percentual:", "\nValidos:", pervalidos, "\nNulos:", pernulos, "\nBrancos", perbrancos)
+if pervalidos+pernulos+perbrancos != 100:
+    print("Eleicao fraudada")
+else:
+    print("Percentual:", "\nValidos:", pervalidos, "\nNulos:", pernulos, "\nBrancos", perbrancos)
