@@ -1,0 +1,23 @@
+A = []
+for x in range(10):
+    A.append(int(input("Digite um numero")))
+print("Impares")
+for y in range(10):
+    if A[y] %2 != 0:
+        print(A[y],end=" ")
+print("\nPares")
+for y in range(10):
+    if A[y] %2 == 0:
+        print(A[y],end=" ")
+print("\nPositivos")
+for y in range(10):
+    if A[y] > 0:
+        print(A[y],end=" ")
+print("\nNegativos")
+for y in range(10):
+    if A[y] < 0:
+        print(A[y],end=" ")
+
+for y in range(10):
+    if A[y] == 0:
+        print(A[y],end="")
